@@ -1,4 +1,8 @@
 $(document).ready(function () {
+     // Clear input field on page load
+    $('#result').val('');
+
+    //code for encode URL
     $('#btnEncode').click(function () {
         var url = $('#result').val();
         if (url == '') {
@@ -17,6 +21,7 @@ $(document).ready(function () {
 
     });
 
+    // code for decode URL
     $('#btnDecode').click(function () {
         var url = $('#result').val();
         if (url == '') {
@@ -34,6 +39,7 @@ $(document).ready(function () {
         }
     });
 
+    // code for copy result data
     $('#btnCopy').click(function () {
         var resultText = $('#result').val();
         copyToClipboard(resultText);
