@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Thumbnail Downloader - Extract High-Quality Thumbnails</title>
+    <meta name="description"
+        content="Effortlessly extract high-quality thumbnails from any YouTube video using our Thumbnail Downloader app. Enhance your content creation process and design eye-catching visuals easily.">
+    <meta name="keywords"
+        content="YouTube, thumbnail, downloader, extract, high-quality, images, yt thumbnail downloader, youtube thumbnail downloader, best youtube thumbnail downloader">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body class="bg-light">
+    <div class="container py-5 text-center">
+        <h1 class="text-center fw-bold mt-3 mb-3"><strong>Free</strong>
+            URL <i class="fa-solid fa-link"></i> Encoder and <i class="fa-solid fa-link-slash"></i> Decoder Tool
+
+        </h1>
+        <p class="mb-5">Encode and Decode URLs
+            Effortlessly - <i class="fa-solid fa-bolt"></i> <strong>Instantly</strong> Accessible for All!</p>
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="form-group">
+
+                            <textarea name="result" id="result" cols="30" rows="10" class="form-control py-2"
+                                placeholder="Enter Your URL or Text Here..."></textarea>
+                            <button id="btnEncode" class="btn btn-primary text-white my-3 mx-2"><i
+                                    class="fa-solid fa-link"></i> Encode</button>
+                            <button id="btnDecode" class="btn btn-primary text-white my-3 mx-2"><i
+                                    class="fa-solid fa-link-slash"></i> Decode</button>
+                            <button id="btnCopy" class="btn btn-success text-white my-3 mx-2"><i
+                                    class="fa-solid fa-copy"></i> Copy Result</button>
+                            <button id="btnRefresh" class="btn btn-danger text-white my-3 mx-2"><i
+                                    class="fa-solid fa-arrows-rotate"></i> Refresh</button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5 p-5 bg-white border rounded">
+        <h2 class="fw-bold">What is Encoded URL?</h2>
+        <ul>
+            <li>An encoded URL is a URL where certain characters have been replaced with special codes called
+                percent-encoded characters.</li>
+            <li>These codes are used to represent characters that are not allowed or have special meanings in URLs.</li>
+            <li>Encoded URLs are typically used when passing data via query parameters in a URL or when dealing with
+                special characters.
+            </li>
+        </ul>
+        <h5 class="fw-bold">Example:</h5>
+        <ul>
+            <li><b>Original URL:</b> <code>https://example.com/search?q=my search query</code></li>
+            <li><b>Encoded URL (using this tool):</b> <code>https%3A%2F%2Fexample.com%2Fsearch%3Fq%3Dmy%20search%20query</code>
+            </li>
+            <li>In the encoded URL, spaces are replaced with <code>%20</code>.</li>
+            <li>In the encoded URL, characters such as <code>:</code> and <code>/</code> are replaced with
+                <code>%3A</code> and <code>%2F</code>, respectively.</li>
+        </ul>
+        <h2 class="fw-bold">What is Decoded URL?</h2>
+        <ul>
+            <li>A decoded URL is a URL where percent-encoded characters are converted back to their original form.</li>
+            <li>Decoding a URL is necessary to interpret the URL correctly and access the intended resource.</li>
+
+        </ul>
+        <h5 class="fw-bold">Example:</h5>
+        <ul>
+            <li><b>Encoded URL:</b> <code>https%3A%2F%2Fexample.com%2Fsearch%3Fq%3Dmy%20search%20query</code></li>
+            <li><b>Decoded URL (using this tool):</b> <code>https://example.com/search?q=my search query</code></li>
+            <li>In the decoded URL, percent-encoded characters are converted back to their original form.</li>
+        </ul>
+       
+    </div>
+    <footer class="text-center mt-auto bg-white p-3">
+
+        <small>&#0169; <span id="getYear"></span>
+            Created by <a href="https://www.techspecsmart.com/" target="_blank">Naveen Gupta <i
+                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </small>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
